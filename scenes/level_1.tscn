@@ -1,0 +1,89 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/platform.tscn" id="1_platform"]
+[ext_resource type="PackedScene" path="res://scenes/poop.tscn" id="2_poop"]
+[ext_resource type="PackedScene" path="res://scenes/goal.tscn" id="3_goal"]
+[ext_resource type="PackedScene" path="res://scenes/tree.tscn" id="4_tree"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Ground1" parent="." instance=ExtResource("1_platform")]
+position = Vector2(-200, 600)
+size = Vector2(1600, 200)
+
+[node name="Ground2" parent="." instance=ExtResource("1_platform")]
+position = Vector2(1550, 600)
+size = Vector2(1050, 200)
+
+[node name="Ground3" parent="." instance=ExtResource("1_platform")]
+position = Vector2(2780, 600)
+size = Vector2(2300, 200)
+
+[node name="Float1" parent="." instance=ExtResource("1_platform")]
+position = Vector2(1950, 470)
+size = Vector2(200, 32)
+
+[node name="Float2" parent="." instance=ExtResource("1_platform")]
+position = Vector2(2260, 385)
+size = Vector2(180, 32)
+
+[node name="Tree1" parent="." instance=ExtResource("4_tree")]
+position = Vector2(320, 600)
+
+[node name="Tree2" parent="." instance=ExtResource("4_tree")]
+position = Vector2(1000, 600)
+
+[node name="Tree3" parent="." instance=ExtResource("4_tree")]
+position = Vector2(1900, 600)
+
+[node name="Tree4" parent="." instance=ExtResource("4_tree")]
+position = Vector2(2900, 600)
+
+[node name="Tree5" parent="." instance=ExtResource("4_tree")]
+position = Vector2(3600, 600)
+
+[node name="Tree6" parent="." instance=ExtResource("4_tree")]
+position = Vector2(4150, 600)
+
+[node name="Poop1" parent="." instance=ExtResource("2_poop")]
+position = Vector2(520, 600)
+size = 1
+
+[node name="Poop2" parent="." instance=ExtResource("2_poop")]
+position = Vector2(850, 600)
+
+[node name="Poop3" parent="." instance=ExtResource("2_poop")]
+position = Vector2(1150, 600)
+size = 3
+
+[node name="Poop4" parent="." instance=ExtResource("2_poop")]
+position = Vector2(1750, 600)
+
+[node name="Poop5" parent="." instance=ExtResource("2_poop")]
+position = Vector2(2300, 600)
+size = 1
+
+[node name="Poop6" parent="." instance=ExtResource("2_poop")]
+position = Vector2(2470, 600)
+size = 3
+
+[node name="Poop7" parent="." instance=ExtResource("2_poop")]
+position = Vector2(3000, 600)
+
+[node name="Poop8" parent="." instance=ExtResource("2_poop")]
+position = Vector2(3300, 600)
+size = 3
+
+[node name="Poop9" parent="." instance=ExtResource("2_poop")]
+position = Vector2(3400, 600)
+size = 1
+
+[node name="Poop10" parent="." instance=ExtResource("2_poop")]
+position = Vector2(3750, 600)
+
+[node name="Poop11" parent="." instance=ExtResource("2_poop")]
+position = Vector2(3980, 600)
+size = 3
+
+[node name="Goal" parent="." instance=ExtResource("3_goal")]
+position = Vector2(4280, 600)

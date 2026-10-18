@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
+[ext_resource type="Texture2D" path="res://assets/girl.png" id="2_girl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_girl"]
+size = Vector2(30, 66)
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -33)
+shape = SubResource("RectangleShape2D_girl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -36)
+scale = Vector2(3, 3)
+texture = ExtResource("2_girl")
+hframes = 6
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -120)
+limit_left = 0
+limit_bottom = 720
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0

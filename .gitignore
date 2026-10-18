@@ -1,0 +1,9 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Zwischendateien
+assets/music.wav
+*.pyc
+__pycache__/
+.DS_Store

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b1vuom0ktgxaf"]
+
+[ext_resource type="Script" uid="uid://kvha12iv22bi" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://d1acfjaidgey" path="res://scripts/background.gd" id="2_bg"]
+[ext_resource type="PackedScene" path="res://scenes/level_1.tscn" id="3_level"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="4_player"]
+[ext_resource type="AudioStream" uid="uid://bs2niqf1fcpiq" path="res://assets/music.ogg" id="5_music"]
+
+[node name="Main" type="Node2D" unique_id=2110959985]
+script = ExtResource("1_main")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=1964988789]
+layer = -10
+
+[node name="Background" type="Node2D" parent="BackgroundLayer" unique_id=162437282]
+script = ExtResource("2_bg")
+
+[node name="Level" parent="." unique_id=297458425 instance=ExtResource("3_level")]
+
+[node name="Player" parent="." unique_id=1045478882 instance=ExtResource("4_player")]
+position = Vector2(140, 598)
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=674577073]
+stream = ExtResource("5_music")
+volume_db = -6.0
+autoplay = true
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=872795518]
+
+[node name="Score" type="Label" parent="HUD" unique_id=1730397906]
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 520.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.17, 0.1, 0.06, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 28
+text = "Haufen übersprungen: 0"
+
+[node name="Message" type="Label" parent="HUD" unique_id=1850206068]
+anchors_preset = -1
+anchor_top = 0.3
+anchor_right = 1.0
+anchor_bottom = 0.3
+offset_top = -60.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 0.95, 0.6, 1)
+theme_override_colors/font_outline_color = Color(0.17, 0.1, 0.06, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/poop.gd" id="1_poop"]
+[ext_resource type="Texture2D" path="res://assets/poop.png" id="2_poop"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_poop"]
+size = Vector2(26, 20)
+
+[node name="Poop" type="Area2D" groups=["poops"]]
+script = ExtResource("1_poop")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -14)
+scale = Vector2(2, 2)
+texture = ExtResource("2_poop")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_poop")
