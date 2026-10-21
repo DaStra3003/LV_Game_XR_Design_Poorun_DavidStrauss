@@ -43,8 +43,11 @@ func update_score():
 	score_label.text = "Haufen übersprungen: " + str(score)
 
 
-func _on_player_died():
-	message_label.text = "Igitt! Reingetreten!"
+func _on_player_died(reason):
+	if reason == "fall":
+		message_label.text = "HILFE! Game Over"
+	else:
+		message_label.text = "OH NEIN! Reingetreten!"
 	await get_tree().create_timer(1.5).timeout
 	# Alles zuruecksetzen
 	score = 0

@@ -3,7 +3,7 @@ extends CharacterBody2D
 # Die Grafik ist ein Spritesheet (assets/girl.png) mit 6 Bildern nebeneinander:
 # 0 = stehen, 1-3 = laufen, 4 = springen, 5 = getroffen
 
-signal died  # wird ausgeloest, wenn die Figur stirbt
+signal died(reason)  # wird ausgeloest, wenn die Figur stirbt; reason = "poop" oder "fall"
 
 const SPEED = 300.0          # Laufgeschwindigkeit
 const JUMP_FORCE = -760.0    # negativ = nach oben (Sprunghoehe ca. 180 Pixel)
@@ -49,7 +49,7 @@ func _physics_process(delta):
 
 	# In ein Loch gefallen?
 	if position.y > FALL_LIMIT:
-		die()
+		die("fall")
 
 
 func update_animation(direction, delta):
@@ -71,13 +71,13 @@ func update_animation(direction, delta):
 		run_time = 0.0
 
 
-func die():
+func die(reason = "poop"):
 	if not alive:
 		return
 	alive = false
 	sprite.frame = 5
 	velocity = Vector2(0, -500)  # kleiner Huepfer nach oben, dann faellt sie raus
-	died.emit()
+	died.emit(reason)
 
 
 func respawn(start_position):

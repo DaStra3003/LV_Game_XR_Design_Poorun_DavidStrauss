@@ -11,7 +11,7 @@
 
 ### Spielidee
 
-*Poorun* ist ein kleines 2D-Jump-and-Run im Retro-Pixel-Look. Ein Mädchen mit dunklen, zerzausten Haaren und rosa Kleid läuft über eine Wiese, auf der jemand seinen Hund nicht aufgeräumt hat. Das einzige Hindernis im Spiel sind Hundehaufen in drei Größen. Wer drüberspringt, bekommt einen Punkt. Wer reintritt, fliegt mit einem „Igitt!" aus dem Bild und beginnt von vorne. Am Ende des Levels wartet eine Zielfahne.
+*Poorun* ist ein kleines 2D-Jump-and-Run im Retro-Pixel-Look. Ein Mädchen mit dunklen, zerzausten Haaren und rosa Kleid läuft über eine Wiese, auf der jemand seinen Hund nicht aufgeräumt hat. Das einzige Hindernis im Spiel sind Hundehaufen in drei Größen. Wer drüberspringt, bekommt einen Punkt. Wer reintritt, fliegt mit einem „OH NEIN!" aus dem Bild und beginnt von vorne; wer in ein Loch fällt, bekommt „HILFE! Game Over" zu sehen. Am Ende des Levels wartet eine Zielfahne.
 
 Die Idee war bewusst simpel: ein einziges, sofort verständliches Hindernis, das jeder aus dem Alltag kennt, verpackt in einem fröhlichen Setting. Der Humor entsteht aus dem Kontrast zwischen der heilen Pixel-Wiese und dem, was darauf liegt. Statt vieler Mechaniken wollte ich eine Mechanik, nämlich das Sprung-Timing, sauber umsetzen und ihr durch Animation, Musik und Feedback Charakter geben.
 
