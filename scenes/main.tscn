@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://kvha12iv22bi" path="res://scripts/main.gd" id="1_main"]
 [ext_resource type="Script" uid="uid://d1acfjaidgey" path="res://scripts/background.gd" id="2_bg"]
-[ext_resource type="PackedScene" path="res://scenes/level_1.tscn" id="3_level"]
+[ext_resource type="PackedScene" uid="uid://ch4cp1leb1c6j" path="res://scenes/level_1.tscn" id="3_level"]
 [ext_resource type="PackedScene" path="res://scenes/player.tscn" id="4_player"]
 [ext_resource type="AudioStream" uid="uid://bs2niqf1fcpiq" path="res://assets/music.ogg" id="5_music"]
 
@@ -16,6 +16,7 @@ layer = -10
 script = ExtResource("2_bg")
 
 [node name="Level" parent="." unique_id=297458425 instance=ExtResource("3_level")]
+position = Vector2(-24, -11)
 
 [node name="Player" parent="." unique_id=1045478882 instance=ExtResource("4_player")]
 position = Vector2(140, 598)
