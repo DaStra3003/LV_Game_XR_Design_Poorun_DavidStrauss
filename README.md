@@ -22,11 +22,11 @@ das dauert ein paar Sekunden.
 
 ## Steuerung
 
-| Aktion   | Tastatur                      | Gamepad          |
-|----------|-------------------------------|------------------|
-| Laufen   | A / D oder Pfeil links/rechts | linker Stick     |
-| Springen | Leertaste, W oder Pfeil hoch  | A-Taste          |
-| Neustart nach dem Ziel | Enter           |                  |
+| Aktion   | Tastatur                      |
+|----------|-------------------------------|
+| Laufen   | A / D oder Pfeil links/rechts |
+| Springen | Leertaste, W oder Pfeil hoch  |
+| Neustart nach dem Ziel | Enter           |
 
 Tipp: Wer die Sprungtaste kurz drückt, springt niedriger, wer sie hält, höher.
 
